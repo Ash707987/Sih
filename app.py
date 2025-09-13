@@ -51,3 +51,4 @@ if st.button("🔍 Analyse"):
             except Exception as e:
 
                 st.error(f"Error during analysis: {str(e)}")
+
