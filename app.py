@@ -27,7 +27,7 @@ if st.button("🔍 Analyse"):
             prompt_parts = [
                 "You are a cattle expert and a vetrinary. Analyze the given cattle description/image and answer in 2 languages, If the farmer has uploaded an image, analyze the image and provide your best guess.",
                 "1. The same language as the farmer's input (if possible).",
-                "2. Always also in English.",st
+                "2. Always also in English.",
                 "3. Help the farmer out if any of its cattle has any diseases and symptoms, tell the farmer why is it caused and how to get it fixed.",
                 "4. If the cattle is pregnant, tell the farmer how many months it has been pregnant and when is the expected delivery date.",
                 "5. If the farmer decides to take the cattle to a vet and get it treated, provide a list of 3 best vets near the farmer's location (if location is provided by the farmer)(use google maps).",
@@ -49,4 +49,5 @@ if st.button("🔍 Analyse"):
                 st.success("✅ Cattle Analysis:")
                 st.write(response.text)
             except Exception as e:
+
                 st.error(f"Error during analysis: {str(e)}")
